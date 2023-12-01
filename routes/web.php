@@ -22,3 +22,4 @@ Route::get('/register',[AuthManager::class,'register'])->name('register');
 Route::post('/registerPost',[AuthManager::class,'registerPost'])->name('register.post');
 Route::get('/login',[AuthManager::class,'login'])->name('login');
 Route::post('/loginPost',[AuthManager::class,'loginPost'])->name('login.post');
+Route::get('/logout',[AuthManager::class,'logout'])->name('logout');
