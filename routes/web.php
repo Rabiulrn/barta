@@ -23,3 +23,5 @@ Route::post('/registerPost',[AuthManager::class,'registerPost'])->name('register
 Route::get('/login',[AuthManager::class,'login'])->name('login');
 Route::post('/loginPost',[AuthManager::class,'loginPost'])->name('login.post');
 Route::get('/logout',[AuthManager::class,'logout'])->name('logout');
+Route::get('/profile',[UserController::class,'profile'])->name('profile');
+Route::get('/editProfile',[UserController::class,'editProfile'])->name('edit.profile');
