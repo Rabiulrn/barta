@@ -36,7 +36,10 @@ class UserController extends Controller
     public function updateProfile( Request $request){
        // Validate the request data
        $request->validate([
-        'bio' => 'nullable|string|max:255', // Adjust validation rules as needed
+        'bio' => 'nullable|string|max:255',
+        'email'=> 'email',
+         
+        
     ]);
 $validatedData =[
     'first_name'=> $request->input('first_name'),
