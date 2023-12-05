@@ -162,7 +162,7 @@
             <div class="flex gap-4 justify-center flex-col text-center items-center">
                 <!-- User Meta -->
                 <div>
-                    <h1 class="font-bold md:text-2xl">{{auth()->user()->first_name}}</h1>
+                    <h1 class="font-bold md:text-2xl">{{auth()->user()->first_name}}&nbsp;{{auth()->user()->last_name}}</h1>
                     <p class="text-gray-700">Less Talk, More Code 💻</p>
                 </div>
                 <!-- / User Meta -->
