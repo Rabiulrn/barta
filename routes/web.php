@@ -24,4 +24,7 @@ Route::get('/login',[AuthManager::class,'login'])->name('login');
 Route::post('/loginPost',[AuthManager::class,'loginPost'])->name('login.post');
 Route::get('/logout',[AuthManager::class,'logout'])->name('logout');
 Route::get('/profile',[UserController::class,'profile'])->name('profile');
-Route::get('/editProfile',[UserController::class,'editProfile'])->name('edit.profile');
+
+Route::get('/editProfile/{id}',[UserController::class,'editProfile'])->name('edit.profile');
+Route::post('/updateProfile',[UserController::class,'updateProfile'])->name('updateProfile');
+//post method a route deoya ki dorkar?????
