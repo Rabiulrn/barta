@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthManager;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,3 +29,7 @@ Route::get('/profile',[UserController::class,'profile'])->name('profile');
 Route::get('/editProfile/{id}',[UserController::class,'editProfile'])->name('edit.profile');
 Route::post('/updateProfile',[UserController::class,'updateProfile'])->name('updateProfile');
 //post method a route deoya ki dorkar?????
+
+
+Route::post('/post',[PostController::class,'post'])->name('post');
+Route::get('/postView',[PostController::class,'postView'])->name('post.view');
