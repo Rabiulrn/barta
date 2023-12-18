@@ -19,17 +19,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[UserController::class,'index'])->name('home');
 // Route::get('/register',[UserController::class,'register'])->name('register');
-Route::get('/register',[AuthManager::class,'register'])->name('register');
-Route::post('/registerPost',[AuthManager::class,'registerPost'])->name('register.post');
-Route::get('/login',[AuthManager::class,'login'])->name('login');
-Route::post('/loginPost',[AuthManager::class,'loginPost'])->name('login.post');
-Route::get('/logout',[AuthManager::class,'logout'])->name('logout');
-Route::get('/profile',[UserController::class,'profile'])->name('profile');
+// Route::get('/register',[AuthManager::class,'register'])->name('register');
+// Route::post('/registerPost',[AuthManager::class,'registerPost'])->name('register.post');
+// Route::get('/login',[AuthManager::class,'login'])->name('login');
+// Route::post('/loginPost',[AuthManager::class,'loginPost'])->name('login.post');
+// Route::get('/logout',[AuthManager::class,'logout'])->name('logout');
+// Route::get('/profile',[UserController::class,'profile'])->name('profile');
 
-Route::get('/editProfile/{id}',[UserController::class,'editProfile'])->name('edit.profile');
-Route::post('/updateProfile',[UserController::class,'updateProfile'])->name('updateProfile');
-//post method a route deoya ki dorkar?????
+// Route::get('/editProfile/{id}',[UserController::class,'editProfile'])->name('edit.profile');
+// Route::post('/updateProfile',[UserController::class,'updateProfile'])->name('updateProfile');
+// //post method a route deoya ki dorkar?????
 
 
-Route::post('/post',[PostController::class,'post'])->name('post');
-Route::get('/postView',[PostController::class,'postView'])->name('post.view');
+// Route::post('/post',[PostController::class,'post'])->name('post');
+// Route::get('/postView',[PostController::class,'postView'])->name('post.view');
