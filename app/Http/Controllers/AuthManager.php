@@ -31,7 +31,7 @@ class AuthManager extends Controller
         ]);
 
         // Attempt to log in the user
-        if (Auth::attempt($credentials)) {
+        if (Auth::attempt($credentials)) { 
             // Authentication successful
 
             // You can perform additional actions here, such as redirecting the user

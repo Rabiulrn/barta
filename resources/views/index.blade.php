@@ -30,7 +30,7 @@
     <!--      </div>-->
 
     <!-- Barta Create Post Card -->
-    <form method="POST" Action="{{route('post')}}" enctype="multipart/form-data"
+    <form method="POST" Action="{{route('post.store')}}" enctype="multipart/form-data"
       class="bg-white border-2 border-black rounded-lg shadow mx-auto max-w-none px-4 py-5 sm:px-6 space-y-3">
       <!-- Create Post Card Top -->
       @csrf
@@ -131,7 +131,7 @@
 
     <!-- Newsfeed -->
     <section id="newsfeed" class="space-y-6">
-      @if($data)
+      @if(isset($data))
       @foreach($data as $project)
       <div class="project-card">
 
@@ -192,7 +192,7 @@
           </header>
 
           <!-- Content -->
-          <a href="./single.html">
+          <a href="{{route('single')}}">
             <div class="py-4 text-gray-700 font-normal">
               <p>
                 {{ $project->post }}

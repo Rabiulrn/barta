@@ -31,5 +31,6 @@ Route::post('/updateProfile',[UserController::class,'updateProfile'])->name('upd
 //post method a route deoya ki dorkar?????
 
 
-Route::post('/post',[PostController::class,'post'])->name('post');
-Route::get('/postView',[PostController::class,'postView'])->name('post.view');
+Route::post('/post',[PostController::class,'post'])->name('post.store');
+Route::get('/post',[PostController::class,'postView'])->name('post.view');
+Route::get('/single',[PostController::class,'single'])->name('single');
